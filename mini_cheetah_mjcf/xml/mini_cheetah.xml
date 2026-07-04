@@ -17,9 +17,9 @@
             </default>
 
             <default class="collision">
-                <geom type="capsule" group="3" contype="1" conaffinity="1" friction="0.8 0.02 0.01" margin="0.002"/>
+                <geom type="capsule" group="3" contype="0" conaffinity="1" friction="0.8 0.02 0.01"/>
                 <default class="hip_collision">
-                    <geom type="cylinder" size="0.03 0.03" quat="1 1 0 0"/>
+                    <geom type="capsule" size="0.03 0.03" quat="1 1 0 0"/>
                 </default>
                 <default class="thigh1">
                     <geom size="0.018" fromto="0 0 0 0 0 -0.11"/>
@@ -68,7 +68,7 @@
             <camera name="track" pos="1.958 -2.348 0.591" xyaxes="0.768 0.641 0.000 -0.101 0.122 0.987" mode="trackcom"/>
             <inertial mass="3.3" pos="0 0 0" diaginertia="0.042 0.036 0.011"/>
             <geom class="visual" mesh="mini_body"/>
-            <geom type="box" size="0.11 0.04 0.05" friction="0.8 0.02 0.01"/>
+            <geom type="box" size="0.11 0.04 0.05" group="3" contype="0" conaffinity="1" friction="0.8 0.02 0.01"/>
             <site name="imu_frame" pos="0 0 0" quat="0 0 0 1"/>
             <body name="abduct_fr" pos="0.19 -0.049 0">
 
